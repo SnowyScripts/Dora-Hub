@@ -1,0 +1,106 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("The Mimic", "BloodTheme")
+
+
+
+-- Chapter 1
+local Chapter1Tab = Window:NewTab("Chapter 1")
+local C1Section = Chapter1Tab:NewSection("Teleport")
+C1Section:NewButton("Part 1", "Teleports LocalPlayer to The end of Part 1", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(3433, 37, -1538)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+C1Section:NewButton("Part 2", "Teleports LocalPlayer to the ending of part 2", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(1264, 199, -2537)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+
+-- Chapter 2
+local Chapter2Tab = Window:NewTab("Chapter 2")
+local C2Section = Chapter2Tab:NewSection("Teleport")
+C2Section:NewButton("Part 1", "Teleports LocalPlayer to the ending of part 1", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(77, 51, -1591)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+C2Section:NewButton("Part 2", "Teleports LocalPlayer to the ending of part 2", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(234, 101, -561)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+C2Section:NewButton("Part 3", "Teleports LocalPlayer to the ending of part 3", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(1054, 76, -356)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait(0.1)
+    pl.CFrame = location
+end)
+
+
+-- Chapter 3
+local Chapter3Tab = Window:NewTab("Chapter 3")
+local C3Section = Chapter3Tab:NewSection("Teleports")
+C3Section:NewButton("Part 3 INSTANT (Execute in Lobby)", "Teleports LocalPlayer to the ending of part 3 from the lobby", function()
+    for i,v in pairs(Game.Players:GetChildren()) do
+    if v.Name ~= "owner.Name" then
+        Game:GetService("TeleportService"):Teleport(6688734395, v.Character)
+    end
+    end
+end)
+
+C3Section:NewButton("End (Execute in game)", "Teleports to the ending", function()
+    game:GetService("Players").LocalPlayer.Character:MoveTo(Vector3.new(735.967834, 186.71553, -1464.07312, 0, 0, 1, 0, 1, -0, -1, 0, 0))
+end)
+
+-- Chapter 4
+local Chapter4Tab = Window:NewTab("Chapter 4")
+local C4Section = Chapter4Tab:NewSection("Teleports")
+C4Section:NewButton("Part 3 INSTANT (Execute in lobby)", "ButtonInfo", function()
+    for i,v in pairs(Game.Players:GetChildren()) do
+    if v.Name ~= "owner.Name" then
+    Game:GetService("TeleportService"):Teleport(7265397848, v.Character)
+    end
+    end
+end)
+
+C4Section:NewButton("Last Part(Press F9)", "Look on console", function()
+    print("Execute infyield from the other section then type antikick and destroy the hearts with fly and noclip")
+end)
+
+
+-- The Witches Trials
+local TheWTTab = Window:NewTab("The Witch's Trials")
+local TWTSection = TheWTTab:NewSection("Teleports")
+TWTSection:NewButton("Instant Finish (Execute in Lobby)", "gets you to the end", function()
+    for i,v in pairs(Game.Players:GetChildren()) do
+    if v.Name ~= "owner.Name" then
+    Game:GetService("TeleportService"):Teleport(7069191531, v.Character)
+    end
+    end
+end)
+
+
+-- Other
+local OtherTab = Window:NewTab("Other")
+local OSection = OtherTab:NewSection("Admin Commands")
+OSection:NewButton("InfYield", "InfYield", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/MjBzRjmT'),true))()
+end)
+
+OSection:NewButton("reviz", "reviz", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/pyzjWNhk'))()
+end)
